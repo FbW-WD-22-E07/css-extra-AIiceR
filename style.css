@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+  background-color: rgb(212, 159, 168);
+}
+
+nav a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(141, 23, 43);
+}
+
+nav a:hover {
+  background-color: rgb(141, 23, 43);
+  color: bisque;
+}
+
+
