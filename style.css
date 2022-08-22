@@ -5,23 +5,61 @@
   font-family: "Cairo", sans-serif;
 }
 
+:root {
+  --nav-text-height: 60px;
+  --nav-a-color: rgb(141, 23, 43);
+}
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-size: calc(10px + 0.5vw);
+}
+
+body {
+  margin-top: 5vw;
+}
+
+main {
+  padding: 20px;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
   background-color: rgb(212, 159, 168);
+  width: 100vw;
 }
 
 nav a {
   text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  height: var(--nav-text-height);
+  width: calc(100% / 11);
   list-style: none;
-  color: rgb(141, 23, 43);
+  color: var(--nav-a-color);
+  line-height: var(--nav-text-height);
 }
 
 nav a:hover {
-  background-color: rgb(141, 23, 43);
-  color: bisque;
+  background-color: var(--nav-a-color);
+  color: rgb(248, 229, 205);
 }
 
+header,
+h1,
+.doc-section {
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
